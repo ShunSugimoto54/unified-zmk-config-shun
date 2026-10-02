@@ -68,9 +68,9 @@
         layer0_Base {
             bindings = <
 &kp TAB    &kp Q     &kp W          &kp E  &kp R      &kp T            &kp Y  &kp U     &kp I      &kp O    &kp P             &kp MINUS
-&kp RET    &kp A     &kp S          &kp D  &kp F      &kp G            &kp H  &kp J     &kp K      &kp L    &kp LEFT_BRACKET  &mo 3
-&kp LSHFT  &kp Z     &kp X          &kp C  &kp V      &kp B            &kp N  &kp M     &kp COMMA  &kp DOT  &kp SLASH         &kp LS(INT_YEN)
-&kp LCTRL  &kp LALT  &kp BACKSPACE  &mo 1  &kp SPACE  &kp RIGHT_SHIFT  &mo 4  &kp LGUI
+&kp RET    &kp A     &kp S          &kp D  &kp F      &kp G            &kp H  &kp J     &kp K      &kp L    &kp LEFT_BRACKET  &mo 1
+&kp LSHFT  &kp Z     &kp X          &kp C  &kp V      &kp B            &kp N  &kp M     &kp COMMA  &kp DOT  &kp SLASH         &kp INT1
+&kp LCTRL  &kp LALT  &kp BACKSPACE  &mo 2  &kp SPACE  &kp RIGHT_SHIFT  &mo 4  &kp LGUI
             >;
 
             //////&ec_ms_lとrは、上のビヘイビアで作ったもの。
@@ -94,14 +94,14 @@
 &trans  &none   &kp HOME  &kp UP    &kp END    &kp PG_UP      &kp UNDER  &kp N7  &kp N8  &kp N9  &kp MINUS   &trans
 &trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN      &kp COMMA  &kp N4  &kp N5  &kp N6  &kp SLASH   &trans
 &trans  &none   &none     &none     &none      &kp BACKSPACE  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-&trans  &trans  &trans    &trans    &trans     &mo 2          &none      &trans
+&trans  &trans  &trans    &trans    &trans     &mo 3          &none      &trans
             >;
         };
 
         layer3_Symbols {
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK          &kp LPAR       &kp PLUS           &kp INT_YEN
-&trans  &none     &none   &none     &none       &none        &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp COLON          &kp PIPE
+&trans  &none     &none   &none     &none       &none        &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp COLON          &kp LS(INT_YEN)
 &trans  &none     &none   &none     &none       &trans       &kp LT     &kp GT    &kp SEMI           &kp APOS       &kp DOUBLE_QUOTES  &trans
 &trans  &trans    &trans  &trans    &trans      &trans       &kp EQUAL  &trans
             >;
