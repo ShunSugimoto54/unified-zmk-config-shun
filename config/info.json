@@ -1,4 +1,6 @@
 {
+  "id": "sosho",
+  "name": "sosho",
   "keyboard_name": "SO-SHO",
   "url": "https://elekit.co.jp",
   "maintainer": "me",
@@ -10,58 +12,52 @@
         { "label": "L00", "x":   0, "y": 0.75, "row": 0, "col":  0 },
         { "label": "L01", "x":   1, "y": 0.75, "row": 0, "col":  1 },
         { "label": "L02", "x":   2, "y": 0.25, "row": 0, "col":  2 },
-        { "label": "L03", "x":   3, "y": 0.00, "row": 0, "col":  3 },
+        { "label": "L03", "x":   3, "y":    0, "row": 0, "col":  3 },
         { "label": "L04", "x":   4, "y": 0.13, "row": 0, "col":  4 },
         { "label": "L05", "x":   5, "y": 0.25, "row": 0, "col":  5 },
-        
         { "label": "R00", "x":  10, "y": 0.25, "row": 0, "col":  6 },
         { "label": "R01", "x":  11, "y": 0.13, "row": 0, "col":  7 },
-        { "label": "R02", "x":  12, "y": 0.00, "row": 0, "col":  8 },
+        { "label": "R02", "x":  12, "y":    0, "row": 0, "col":  8 },
         { "label": "R03", "x":  13, "y": 0.25, "row": 0, "col":  9 },
         { "label": "R04", "x":  14, "y": 0.75, "row": 0, "col": 10 },
         { "label": "R05", "x":  15, "y": 0.75, "row": 0, "col": 11 },
 
-        
         { "label": "L06", "x":   0, "y": 1.75, "row": 1, "col":  0 },
         { "label": "L07", "x":   1, "y": 1.75, "row": 1, "col":  1 },
         { "label": "L08", "x":   2, "y": 1.25, "row": 1, "col":  2 },
-        { "label": "L09", "x":   3, "y": 1.00, "row": 1, "col":  3 },
+        { "label": "L09", "x":   3, "y":    1, "row": 1, "col":  3 },
         { "label": "L10", "x":   4, "y": 1.13, "row": 1, "col":  4 },
         { "label": "L11", "x":   5, "y": 1.25, "row": 1, "col":  5 },
-        
         { "label": "R06", "x":  10, "y": 1.25, "row": 1, "col":  6 },
         { "label": "R07", "x":  11, "y": 1.13, "row": 1, "col":  7 },
-        { "label": "R08", "x":  12, "y": 1.00, "row": 1, "col":  8 },
+        { "label": "R08", "x":  12, "y":    1, "row": 1, "col":  8 },
         { "label": "R09", "x":  13, "y": 1.25, "row": 1, "col":  9 },
         { "label": "R10", "x":  14, "y": 1.75, "row": 1, "col": 10 },
         { "label": "R11", "x":  15, "y": 1.75, "row": 1, "col": 11 },
 
-        
         { "label": "L12", "x":   0, "y": 2.75, "row": 2, "col":  0 },
         { "label": "L13", "x":   1, "y": 2.75, "row": 2, "col":  1 },
         { "label": "L14", "x":   2, "y": 2.25, "row": 2, "col":  2 },
-        { "label": "L15", "x":   3, "y": 2.00, "row": 2, "col":  3 },
+        { "label": "L15", "x":   3, "y":    2, "row": 2, "col":  3 },
         { "label": "L16", "x":   4, "y": 2.13, "row": 2, "col":  4 },
         { "label": "L17", "x":   5, "y": 2.25, "row": 2, "col":  5 },
-        
         { "label": "R12", "x":  10, "y": 2.25, "row": 2, "col":  6 },
         { "label": "R13", "x":  11, "y": 2.13, "row": 2, "col":  7 },
-        { "label": "R14", "x":  12, "y": 2.00, "row": 2, "col":  8 },
+        { "label": "R14", "x":  12, "y":    2, "row": 2, "col":  8 },
         { "label": "R15", "x":  13, "y": 2.25, "row": 2, "col":  9 },
         { "label": "R16", "x":  14, "y": 2.75, "row": 2, "col": 10 },
         { "label": "R17", "x":  15, "y": 2.75, "row": 2, "col": 11 },
 
-        
         { "label": "L18", "x":   0, "y": 3.75, "row": 3, "col":  0 },
         { "label": "L19", "x":   1, "y": 3.75, "row": 3, "col":  1 },
         { "label": "L20", "x": 5.5, "y": 3.75, "row": 3, "col":  2 },
         { "label": "L21", "x": 6.5, "y": 3.87, "row": 3, "col":  3 },
-        
         { "label": "R18", "x": 8.5, "y": 3.87, "row": 3, "col":  4 },
         { "label": "R19", "x": 9.5, "y": 3.75, "row": 3, "col":  5 },
         { "label": "R20", "x":  14, "y": 3.75, "row": 3, "col":  6 },
         { "label": "R21", "x":  15, "y": 3.75, "row": 3, "col":  7 }
       ]
     }
-  }
+  },
+  "sensors": []
 }

@@ -34,30 +34,25 @@
         compatible = "zmk,combos";
 
         //////左クリックのコンボ 19はJのキー 20はKのキーに相当します。
-
         ////combo_LCLK {
         ////    timeout-ms = <50>;
         ////    key-positions = <19 20>;
         ////    bindings = <&mkp LCLK>;
         ////};
-
         //////右クリックのコンボ 20 K 21 L
-
         ////combo_RCLK {
         ////    timeout-ms = <50>;
         ////    key-positions = <20 21>;
         ////    bindings = <&mkp RCLK>;
         ////};
-
         //////ホイールクリックのコンボ 19 J 21 L
-
         ////combo_MCLK {
         ////    timeout-ms = <90>;
         ////    key-positions = <19 21>;
         ////    bindings = <&mkp MCLK>;
         ////};
-
         //隼追加　ブートローダーのコンボ
+
         combo_BootLoader {
             timeout-ms = <50>;
             key-positions = <6 7 38 43>;
@@ -79,9 +74,7 @@
             >;
 
             //////&ec_ms_lとrは、上のビヘイビアで作ったもの。
-
             ////sensor-bindings = <&ec_ms_l SCRL_LEFT SCRL_RIGHT &ec_ms_r SCRL_DOWN SCRL_UP>;
-
             //隼追加　左手エンコーダでタブ／シフトタブ、右手エンコーダで音量の上下
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -105,13 +98,12 @@
             >;
 
             //////レイヤー2のときだけ、左手のエンコーダを回すとボリュームの上下ができるようになっています。
-
             ////sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_DOWN SCRL_UP>;
         };
 
         layer3_Functions,MouseKeys {
             bindings = <
-&kp ESC  &none   &kp F7     &kp F8            &kp F9          &kp F12    &trans    &none      &mkp MCLK  &none  &none  &trans
+&kp ESC  &none   &kp F7     &kp F8            &kp F9          &kp F12    &kp F13   &none      &mkp MCLK  &none  &none  &trans
 &trans   &none   &kp F4     &kp F5            &kp F6          &kp F11    &mkp MB4  &mkp LCLK  &mkp RCLK  &none  &none  &trans
 &trans   &none   &kp F1     &kp F2            &kp F3          &kp F10    &mkp MB5  &none      &none      &none  &none  &trans
 &trans   &trans  &kp LANG2  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp LANG1  &none     &trans
