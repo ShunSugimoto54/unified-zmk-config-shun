@@ -40,7 +40,7 @@ https://zmk.dev/docs/keymaps/input-processors
     status = "okay";
 	//input-processors = <&zip_xy_scaler 2 1>;
 	////隼追記（左手トラックパッドの倍率変更、Y方向反転、スクロール化）
-	input-processors = <&zip_xy_scaler 1 40>,<&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,<&zip_xy_to_scroll_mapper>;
+	input-processors = <&zip_xy_scaler 1 80>,<&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,<&zip_xy_to_scroll_mapper>;
 };
 
 &trackball_split { status = "okay"; };
