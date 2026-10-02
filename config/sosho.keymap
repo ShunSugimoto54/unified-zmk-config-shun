@@ -55,8 +55,10 @@
         ////    timeout-ms = <90>;
         ////    key-positions = <19 21>;
         ////    bindings = <&mkp MCLK>;
+        ////};
 
         //隼追加　ブートローダーのコンボ
+        combo_BootLoader {
             timeout-ms = <50>;
             key-positions = <6 7 38 43>;
             bindings = <&bootloader>;
