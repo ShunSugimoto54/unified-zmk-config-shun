@@ -82,10 +82,10 @@
 
         layer1_Functions,MouseKeys {
             bindings = <
-&kp ESC  &kp F9  &kp F10    &kp F11           &kp F12         &none      &kp LC(LA(F1))  &none      &mkp MCLK  &mkp RCLK  &none  &trans
-&trans   &kp F5  &kp F6     &kp F7            &kp F8          &none      &mkp MB5        &mkp LCLK  &none      &none      &none  &trans
-&trans   &kp F1  &kp F2     &kp F3            &kp F4          &kp DEL    &mkp MB4        &kp LC(X)  &kp LC(C)  &kp LC(V)  &none  &trans
-&trans   &trans  &kp LANG2  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp LANG1  &none           &trans
+&kp ESC  &kp F9  &kp F10    &kp F11           &kp F12         &none          &kp LC(LA(F1))  &none      &mkp MCLK  &mkp RCLK  &none  &trans
+&trans   &kp F5  &kp F6     &kp F7            &kp F8          &none          &mkp MB5        &mkp LCLK  &none      &none      &none  &trans
+&trans   &kp F1  &kp F2     &kp F3            &kp F4          &kp BACKSPACE  &mkp MB4        &kp LC(X)  &kp LC(C)  &kp LC(V)  &none  &trans
+&trans   &trans  &kp LANG2  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp LANG1      &none           &trans
             >;
         };
 
@@ -94,7 +94,7 @@
 &kp LC(S)  &none      &kp HOME   &kp UP     &kp END    &kp PG_UP      &kp UNDER   &kp N7  &kp N8  &kp N9  &kp COLON          &kp MINUS
 &trans     &kp LC(Y)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN      &kp COMMA   &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &trans
 &trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp BACKSPACE  &kp N0      &kp N1  &kp N2  &kp N3  &kp SLASH          &trans
-&kp LC(F)  &kp LC(A)  &trans     &trans     &trans     &mo 3          &kp PERIOD  &trans
+&kp LC(F)  &kp LC(A)  &kp DEL    &trans     &trans     &mo 3          &kp PERIOD  &trans
             >;
         };
 
