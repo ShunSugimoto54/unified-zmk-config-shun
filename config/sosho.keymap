@@ -82,27 +82,27 @@
 
         layer1_Functions,MouseKeys {
             bindings = <
-&kp ESC  &none   &kp F7     &kp F8            &kp F9          &kp F12    &kp LC(LA(F1))  &none      &mkp MCLK  &mkp RCLK  &none  &trans
-&trans   &none   &kp F4     &kp F5            &kp F6          &kp F11    &mkp MB4        &mkp LCLK  &none      &none      &none  &trans
-&trans   &none   &kp F1     &kp F2            &kp F3          &kp F10    &mkp MB5        &none      &none      &none      &none  &trans
+&kp ESC  &kp F9  &kp F10    &kp F11           &kp F12         &none      &kp LC(LA(F1))  &none      &mkp MCLK  &mkp RCLK  &none  &trans
+&trans   &kp F5  &kp F6     &kp F7            &kp F8          &none      &mkp MB5        &mkp LCLK  &none      &none      &none  &trans
+&trans   &kp F1  &kp F2     &kp F3            &kp F4          &none      &mkp MB4        &kp LC(X)  &kp LC(C)  &kp LC(V)  &none  &trans
 &trans   &trans  &kp LANG2  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp LANG1  &none           &trans
             >;
         };
 
         layer2_Cursors,Numbers {
             bindings = <
-&trans  &none   &kp HOME  &kp UP    &kp END    &kp PG_UP      &kp UNDER  &kp N7  &kp N8  &kp N9  &kp MINUS   &trans
-&trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN      &kp COMMA  &kp N4  &kp N5  &kp N6  &kp SLASH   &trans
-&trans  &none   &none     &none     &none      &kp BACKSPACE  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-&trans  &trans  &trans    &trans    &trans     &mo 3          &none      &trans
+&kp LC(S)  &none      &kp HOME   &kp UP     &kp END    &kp PG_UP      &kp UNDER   &kp N7  &kp N8  &kp N9  &kp COLON          &kp MINUS
+&trans     &kp LC(Y)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN      &kp COMMA   &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &trans
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp BACKSPACE  &kp N0      &kp N1  &kp N2  &kp N3  &kp SLASH          &trans
+&kp LC(F)  &kp LC(A)  &trans     &trans     &trans     &mo 3          &kp PERIOD  &trans
             >;
         };
 
         layer3_Symbols {
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK          &kp LPAR       &kp PLUS           &kp INT_YEN
-&trans  &none     &none   &none     &none       &none        &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp COLON          &kp LS(INT_YEN)
-&trans  &none     &none   &none     &none       &trans       &kp LT     &kp GT    &kp SEMI           &kp APOS       &kp DOUBLE_QUOTES  &trans
+&none   &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK          &kp LPAR       &kp PLUS           &kp INT_YEN
+&trans  &none     &none   &none     &none       &none        &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp LS(INT_YEN)
+&trans  &none     &none   &none     &none       &trans       &kp LT     &kp GT    &kp SEMI           &kp APOS       &kp LS(SLASH)      &trans
 &trans  &trans    &trans  &trans    &trans      &trans       &kp EQUAL  &trans
             >;
 
