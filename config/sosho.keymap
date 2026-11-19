@@ -65,12 +65,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0_Base {
+        layer0_Base_QWERTY {
             bindings = <
 &kp TAB    &kp Q     &kp W          &kp E  &kp R      &kp T            &kp Y  &kp U     &kp I      &kp O    &kp P             &kp MINUS
-&kp RET    &kp A     &kp S          &kp D  &kp F      &kp G            &kp H  &kp J     &kp K      &kp L    &kp LEFT_BRACKET  &mo 1
+&kp RET    &kp A     &kp S          &kp D  &kp F      &kp G            &kp H  &kp J     &kp K      &kp L    &kp LEFT_BRACKET  &mo 2
 &kp LSHFT  &kp Z     &kp X          &kp C  &kp V      &kp B            &kp N  &kp M     &kp COMMA  &kp DOT  &kp SLASH         &kp LS(INT1)
-&kp LCTRL  &kp LALT  &kp BACKSPACE  &mo 2  &kp SPACE  &kp RIGHT_SHIFT  &mo 4  &kp LGUI
+&kp LCTRL  &kp LALT  &kp BACKSPACE  &mo 3  &kp SPACE  &kp RIGHT_SHIFT  &mo 5  &kp LGUI
             >;
 
             //////&ec_ms_lとrは、上のビヘイビアで作ったもの。
@@ -80,7 +80,16 @@
             sensor-bindings = <&inc_dec_kp LS(TAB) TAB &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer1_Functions,MouseKeys {
+        layer1_Base_OHNISHI {
+            bindings = <
+&trans  &kp Q   &kp L   &kp U   &kp COMMA  &kp PERIOD   &kp F   &kp W   &kp R  &kp Y  &kp P  &kp SLASH
+&trans  &kp E   &kp I   &kp A   &kp O      &kp MINUS    &kp K   &kp T   &kp N  &kp S  &kp H  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V      &kp AT_SIGN  &kp G   &kp D   &kp M  &kp J  &kp B  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans
+            >;
+        };
+
+        layer2_Functions,MouseKeys {
             bindings = <
 &kp ESC  &kp F9  &kp F10    &kp F11           &kp F12         &none          &kp LC(LA(F1))  &none      &mkp MCLK  &mkp RCLK  &none  &trans
 &trans   &kp F5  &kp F6     &kp F7            &kp F8          &none          &mkp MB5        &mkp LCLK  &none      &none      &none  &trans
@@ -89,16 +98,16 @@
             >;
         };
 
-        layer2_Cursors,Numbers {
+        layer3_Cursors,Numbers {
             bindings = <
 &kp LC(S)  &none      &kp HOME   &kp UP     &kp END    &kp PG_UP      &kp UNDER   &kp N7  &kp N8  &kp N9  &kp COLON          &kp MINUS
 &trans     &kp LC(Y)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN      &kp COMMA   &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &trans
 &trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp BACKSPACE  &kp N0      &kp N1  &kp N2  &kp N3  &kp SLASH          &trans
-&kp LC(F)  &kp LC(A)  &kp DEL    &trans     &trans     &mo 3          &kp PERIOD  &trans
+&kp LC(F)  &kp LC(A)  &kp DEL    &trans     &trans     &mo 4          &kp PERIOD  &trans
             >;
         };
 
-        layer3_Symbols {
+        layer4_Symbols {
             bindings = <
 &none   &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK          &kp LPAR       &kp PLUS           &kp INT_YEN
 &trans  &none     &none   &none     &none       &none        &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp LS(INT_YEN)
@@ -110,12 +119,12 @@
             ////sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_DOWN SCRL_UP>;
         };
 
-        layer4_System {
+        layer5_System {
             bindings = <
-&none  &none       &none  &none  &none  &none  &bt BT_CLR  &none  &none  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1
-&none  &none       &none  &none  &none  &none  &none       &none  &none  &none         &bt BT_SEL 2  &bt BT_SEL 3
-&none  &none       &none  &none  &none  &none  &none       &none  &none  &none         &bt BT_SEL 4  &bt BT_NXT
-&none  &sys_reset  &none  &none  &none  &none  &none       &none
+&tog 1  &none       &none  &none  &none  &none  &bt BT_CLR  &none  &none  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1
+&none   &none       &none  &none  &none  &none  &none       &none  &none  &none         &bt BT_SEL 2  &bt BT_SEL 3
+&none   &none       &none  &none  &none  &none  &none       &none  &none  &none         &bt BT_SEL 4  &bt BT_NXT
+&none   &sys_reset  &none  &none  &none  &none  &none       &none
             >;
         };
 
